@@ -34,6 +34,17 @@
       overflow-x: hidden;
     }
 
+    /* ── ZORO BG ── */
+    .zoro-bg {
+      position: fixed;
+      inset: 0;
+      background: url('zoro.jpg') center center / cover no-repeat;
+      opacity: 0.04;
+      pointer-events: none;
+      z-index: 0;
+      filter: grayscale(30%) blur(2px);
+    }
+
     /* ── NOISE OVERLAY ── */
     body::before {
       content: '';
@@ -374,6 +385,9 @@
   </style>
 </head>
 <body>
+
+  <!-- Zoro faded background -->
+  <div class="zoro-bg"></div>
 
   <!-- Blobs -->
   <div class="blob blob-1"></div>
